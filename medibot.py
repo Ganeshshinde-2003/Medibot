@@ -28,8 +28,8 @@ def load_llm(huggingface_repo_id, HF_TOKEN):
         repo_id=huggingface_repo_id,
         task="text-generation",
         temperature=0.5,
-        huggingfacehub_api_token=HF_TOKEN,  # Your HuggingFace token
-        max_new_tokens=512  # ✅ Moved outside model_kwargs
+        huggingfacehub_api_token=HF_TOKEN,
+        max_new_tokens=512
     )
     return llm
 
